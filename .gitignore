@@ -1,0 +1,83 @@
+# --------------------------
+# Python 核心忽略项
+# --------------------------
+# 虚拟环境（本地开发依赖，不提交）
+venv/
+env/
+ENV/
+.env
+.env.local
+.venv/
+
+# 字节码文件（Python 编译产物）
+__pycache__/
+*.py[cod]
+*$py.class
+*.so  # C 扩展编译产物
+
+# 构建 & 打包产物（PyPI 发布用，本地构建后不提交）
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+*.whl  # Wheel 包（dist 中已包含，单独再过滤防止遗漏）
+
+# 测试 & 缓存文件
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/  # tox 测试环境
+.nox/  # nox 测试环境
+.mypy_cache/  # mypy 类型检查缓存
+.ruff_cache/  # ruff 代码检查缓存
+
+# --------------------------
+# 开发工具 & IDE 配置
+# --------------------------
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+.vscode/*
+!.vscode/settings.json  # 可选：如果需要共享统一设置，可取消注释这行
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Vim
+*.swp
+*.swo
+.*.swp
+
+# Sublime Text
+*.sublime-*
+
+# --------------------------
+# 系统 & 临时文件
+# --------------------------
+.DS_Store  # Mac 系统垃圾文件
+Thumbs.db  # Windows 系统垃圾文件
+*.log
+*.tmp
+*.bak
+*~
+
+# --------------------------
+# 可选：特殊场景（根据需求启用）
+# --------------------------
+# 如果使用 Jupyter Notebook，添加：
+# *.ipynb_checkpoints/
+# notebook_output/
+
+# 如果使用 Poetry 管理依赖，添加：
+# poetry.lock  # 可选：Poetry 锁文件，建议提交（确保依赖版本一致）
+# . poetry/
+
+# 如果使用 Pipenv，添加：
+# Pipfile.lock  # 可选：Pipenv 锁文件，建议提交
