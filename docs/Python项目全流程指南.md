@@ -333,28 +333,11 @@ python -m build
 
 ### 1. 安装包
 
-```bash
-pip install shs_calculator
-```
-
 ```shell
 $ pip show shs_calculator
 Name: shs_calculator
 Version: 0.1.0
-Summary: 一个简单的Python计算器项目示例，演示从创建到发布PyPI的全流程
-Home-page:
-Author:
-Author-email: Hollson <hollson@qq.com>
-License:
-Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
-Requires:
-Required-by:
-
-
-$ pip show shs_calculator
-Name: shs_calculator
-Version: 0.1.2
-Summary: 这是一个简单的Python计算器项目，演示了Python项目从创建到发布PyPI的全流程。
+Summary: 一个简单的加减乘除计算包，完美演绎了Python包的应用过程。
 Home-page: https://github.com/hollson/shs_calculator
 Author:
 Author-email: Hollson <hollson@qq.com>

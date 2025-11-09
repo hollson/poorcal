@@ -2,5 +2,5 @@
 from .calculator import Calculator
 
 # 定义包的版本号（与 pyproject.toml 中的版本保持一致）
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __all__ = ["Calculator"]
